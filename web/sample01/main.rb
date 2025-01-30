@@ -1,20 +1,8 @@
-ImgHost = "https://amami-harhid.github.io/scratch3LikeJsTrial"
+require_relative "./lib/rubyDef"
+require_relative "./ruby/preload"
+require_relative "./ruby/prepare"
+require_relative "./ruby/setting"
 
-def preload 
-    P::loadImage("#{ImgHost}/web/assets/Jurassic.svg", "Jurassic")
-end
-
-def prepare 
-
-    P::createStage("stage")
-    P::addImage("Jurassic")
-
-end
-
-def setting
-
-
-end
 
 JS::global[:P]._init();
 
